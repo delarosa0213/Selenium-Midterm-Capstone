@@ -95,6 +95,9 @@ public class EdurekaMain {
 	    @Test(priority = 4, dataProvider = "Topics")
 	    public void chooseTopic(String topic1, String topic2) {
 	    	topics.topics(topic1, topic2);
+	    	//printing topics got from excel file
+	    	System.out.println(topic1);
+	    	System.out.println(topic2);
 	    	test.log(LogStatus.PASS, "Topic of interest selected successfully");
 	    }
 	    @DataProvider(name = "Topics")
