@@ -5,11 +5,12 @@
     <classes>
       <class name="tests.EdurekaMain">
         <methods>
+          <include name="ToI"/>
           <include name="tearDown"/>
           <include name="Myprofile"/>
-          <include name="testLogin" invocation-numbers="0"/>
+          <include name="testLogin"/>
           <include name="setUp"/>
-          <include name="chooseTopic" invocation-numbers="0"/>
+          <include name="chooseTopic"/>
         </methods>
       </class> <!-- tests.EdurekaMain -->
     </classes>

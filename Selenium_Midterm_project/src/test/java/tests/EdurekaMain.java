@@ -66,9 +66,11 @@ public class EdurekaMain {
 	  @Test(priority =1 ,dataProvider = "loginCredentials")
 	    public void testLogin(String username, String password) {
 	        login.testValidLogin(username, password);
+	        System.out.println(username);
+	        System.out.println(password);
 		  	test.log(LogStatus.INFO, "My Profile Icon was clicked");
 	        
-	
+	//this is a sample modified
 	    }
 
 	    @DataProvider(name = "loginCredentials")
@@ -105,5 +107,6 @@ public class EdurekaMain {
 	    	extent.endTest(test);
 	        extent.flush();
 	    }
+	    
 }
 	  
